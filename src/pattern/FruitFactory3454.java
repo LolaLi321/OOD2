@@ -1,5 +1,8 @@
+package pattern;
 // 1. public static IPackage packFruits(String fruit) { 
+
 // 2. 工厂方法？
+
 public class FruitFactory3454 {
     public static void main(String[] args) {
         FruitFactory fruitFactory = new FruitFactory();
