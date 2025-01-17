@@ -2,7 +2,7 @@ package pattern;
 
 // 1. 不知道如何处理scanner的输入？ 必须comment掉然后硬编码"coconut", 3进行test
 // 2. 这道题看了参考才写出来，自己没有思路，没法自发写出来
-// line55的 abstract Sugar setSugar(int sugar);这里的abstract可否省略？
+// line55的 abstract Sugar setSugar(int sugar);这里的abstract可否省略？ 不可省略 // 通过abstract强制子类实现这些方法
 import java.io.FileReader;
 import java.util.Scanner;
 
@@ -60,7 +60,7 @@ abstract class AbstractFactory {
 
 class MaterialFactory extends AbstractFactory {
 
-    private final static String _PEARL = "Pearl";
+    private final String _PEARL = "Pearl";
     private final static String _COCONUT = "Coconut";
     private final static String _HONEY_BEAN = "HoneyBean";
 

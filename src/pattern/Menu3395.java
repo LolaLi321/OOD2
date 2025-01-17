@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 public class Menu3395 {
     public static void main(String[] args) {
         MenuController menuController = new MenuController();
-
         User admin = new User("Bob", "Admin");
         admin.setMenuList(menuController.getMenuByRole(admin.getRole()));
 
@@ -18,7 +17,6 @@ public class Menu3395 {
 
         System.out.println("Menu List of Admin: " + admin.getMenuList().toString());
         System.out.println("Menu List of Staff: " + staff.getMenuList().toString());
-
     }
 
 }

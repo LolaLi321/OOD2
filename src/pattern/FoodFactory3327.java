@@ -1,6 +1,6 @@
 package pattern;
 
-// 1. 用interface 还是 abstract class? 是为了包含字段和默认实现吗，比如abstract class Food？
+// 1. 用interface 还是 abstract class? 是为了包含字段,函数和默认实现吗，比如abstract class Food？
 // 我的理解是：（老师还有其他理解吗？）
 // 对于 Food：使用 abstract class 因为需要共享字段(name, price)和实现(getter/setter)
 // 对于 FoodFactory：使用 interface 更合适，因为它只定义行为（createFood方法），不需要共享任何状态或实现
@@ -10,7 +10,8 @@ public class FoodFactory3327 {
     public static void main(String[] args) {
         FoodFactory burgerFactory = new BurgerFactory();
         // FoodFactory snackFactory = new SnackFactory();
-        FoodFactory beverageFactory = new BeverageFactory();
+        FoodFactory beverageFactory = new BeverageFactory(); // 对外暴露较少更少
+        // BeverageFactory beverageFactory = new BeverageFactory();
 
         Food CheeseBurger = burgerFactory.createFood("cheese");
         Food coke = beverageFactory.createFood("coke");
